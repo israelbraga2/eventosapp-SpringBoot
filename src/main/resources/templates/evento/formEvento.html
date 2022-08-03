@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" lang="en">
+  <head>
+    <title>
+     EventoApp
+    </title>
+    <!--Import Google Icon Font-->
+       <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>-->
+      
+
+    <!-- for-mobile-apps -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="application/x-javascript">
+      addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+      	function hideURLbar(){ window.scrollTo(0,1); }
+    </script>
+    <!-- //for-mobile-apps -->
+    <!-- //custom-theme -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- js -->
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <!-- //js -->
+    <!-- font-awesome-icons -->
+    <!-- //font-awesome-icons -->
+    <link
+      href="//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!--Import materialize.css-->
+      <!-- <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>-->
+  </head>
+  <body>
+    <!-- banner -->
+    <div class="center-container">
+      <div class="main">
+        <h1 class="islayouts_head">Event Cadastration Form</h1>
+      </div>
+     <!-- <h3 class="is_main_grid_right">
+       <a class="is_main_grid_right" href="/eventos">Lista de Eventos</a></h3>-->
+       
+       <!--<th:block th:include="mensagemValidacao"></th:block>-->
+       
+         
+     
+        <div class="islayouts_main_grid">
+          <form action="#" method="post" class="is_form_post">
+            <div class="is_agileits_main_grid isl_main_grid">
+              <span class="agileits_grid">
+                <label>Event Name </label>
+                <input
+                  type="text"
+                  value=""
+                  name="nome"
+                  placeholder="Event Name"
+                  required=""
+                />
+              </span>
+            </div>
+            <div class="is_agileits_main_grid isl_main_grid">
+              <span class="agileits_grid">
+                <label>Locale </label>
+                <input
+                  type="text"
+                  name="local"
+                  placeholder="Event Locale"
+                  required=""
+                />
+              </span>
+            </div>
+           <!-- <div class="is_agileits_main_grid isl_main_grid">
+              <span class="agileits_grid">
+                <label>Your Email </label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required=""
+                />
+              </span>
+            </div>
+            <div class="is_agileits_main_grid isl_main_grid">
+              <span class="agileits_grid">
+                <label>Phone Number </label>
+                <input
+                  type="text"
+                  name="Task"
+                  placeholder="Phone Number"
+                  required=""
+                />
+              </span>
+            </div>
+            <div class="is_agileits_main_grid isl_main_grid">
+              <span class="agileits_grid">
+                <label>No.of persons </label>
+                <select name="country">
+                  <option value="none" selected="" disabled="">
+                    Select numbers
+                  </option>
+                  <option value="Ph">50</option>
+                  <option value="Po">100</option>
+                  <option value="So">200</option>
+                  <option value="Sp">500</option>
+                  <option value="Sw">1000</option>
+                </select>
+              </span>
+            </div>-->
+            <div class="agileits_islayouts_main_grid isls_main_grid">
+              <span class="agileinfo_grid">
+                <label>Date / Time </label>
+                <div class="agileits_islayouts_main_gridl">
+                  <input
+                    class="date"
+                    id="datepicker"
+                    name="data"
+                    type="text"
+                    value="mm/dd/yyyy"
+                    onfocus="this.value = '';"
+                    onblur="if (this.value == '') {this.value = '';}"
+                    required=""
+                  />
+                </div>
+                <div class="agileits_islayouts_main_gridr">
+                  <input type="time" value="" name="horario" placeholder=" " required="" />
+                </div>
+                <div class="clear"></div>
+              </span>
+            </div>
+            <!--<div class="content-isls">
+              <div class="form-isls">
+                <div class="content-wthree2">
+                  <div class="grid-islayouts1">
+                    <div class="is-agile1">
+                      <label>Please choose your favourite food</label>
+                      <ul>
+                        <li>
+                          <input type="radio" id="a-option" name="selector1" />
+                          <label for="a-option">Veg </label>
+                          <div class="check"></div>
+                        </li>
+                        <li>
+                          <input type="radio" id="b-option" name="selector1" />
+                          <label for="b-option">Non-veg</label>
+                          <div class="check"><div class="inside"></div></div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+              <div class="form-isls-1">
+                <div class="grid-islayouts1">
+                  <div class="is-agile1">
+                    <label>Please choose your favourite drink</label>
+                    <ul>
+                      <li>
+                        <input type="radio" id="d-option" name="selector2" />
+                        <label for="d-option">Wine</label>
+                        <div class="check"></div>
+                      </li>
+                      <li>
+                        <input type="radio" id="e-option" name="selector2" />
+                        <label for="e-option">Whisky</label>
+                        <div class="check"><div class="inside"></div></div>
+                      </li>
+                      <li>
+                        <input type="radio" id="f-option" name="selector2" />
+                        <label for="f-option">beer </label>
+                        <div class="check"><div class="inside"></div></div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="clear"></div>
+            </div>-->
+            <div class="is_main_grid">
+              <div class="is_main_grid_right">
+                <input type="submit" value="Submit" />
+              </div>
+      
+            </div>
+          </form>
+        </div>
+       
+        <!-- Calendar -->
+        <link rel="stylesheet" href="css/jquery-ui.css" />
+        <script src="js/jquery-ui.js"></script>
+        <script>
+          $(function () {
+            $("#datepicker").datepicker();
+          });
+        </script>
+        <!-- //Calendar -->
+        <div class="islayouts_copy_right">
+          <div class="container">
+            <p>
+              © 2022 EventApp.| Design by
+              <a href="https://github.com/israelbraga2" target="_blank">IsraelBraga</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //footer -->
+    <!--JavaScript at end of body for optimized loading-->
+      <!--<script type="text/javascript" src="materialize/js/materialize.min.js"></script>	-->
+  </body>
+</html>
